@@ -1,0 +1,14 @@
+<?php
+
+$config['distributed-poller']['poll-producer']['log-file'] = '/var/log/observium/poll-producer.log';
+$config['distributed-poller']['poll-producer']['queue'] = '/queue/poll-producer';
+// Get devices whose "last polled" timestamp was more than N seconds ago
+$config['distributed-poller']['poll-producer']['ttl'] = 5;
+$config['distributed-poller']['messagebroker']['host'] = 'localhost';
+$config['distributed-poller']['messagebroker']['port'] = 61613;
+$config['distributed-poller']['messagebroker']['username'] = 'guest';
+$config['distributed-poller']['messagebroker']['password'] = 'guest';
+
+
+
+?>
